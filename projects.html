@@ -1,46 +1,103 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projets - Alexis Soltysiak</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projets - Soltysiak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header principal -->
+  <!-- Navigation -->
   <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="about.html">À propos</a></li>
-        <li><a href="projects.html">Projets</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html"  class="active" >Projets</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
     </nav>
   </header>
 
-  <!-- Seconde navigation pour la sélection des catégories -->
-  <div class="sub-nav">
-    <ul>
-      <li><a href="ia.html">Intelligence Artificielle</a></li>
-      <li><a href="bot.html">Bots</a></li>
-      <li><a href="engineering.html">Engineering</a></li>
-    </ul>
-  </div>
+  <!-- Contenu Projets -->
+  <main class="projects-container">
+    <h1>Mes Projets</h1>
 
-  <div class="container">
-    <h1>Bienvenue dans la section Projets</h1>
-    <p>
-      Sélectionnez une catégorie ci-dessus pour explorer mes projets dans le domaine de l'intelligence artificielle, des bots ou de l'ingénierie.
-    </p>
-    <!-- Contenu principal de la page projets si nécessaire -->
-  </div>
 
-  <footer>
+    <!-- Liste détaillée des projets -->
+    <section class="project-list">
+
+      <article class="project-card" id="agrum">
+        <div class="project-image">
+          <img src="media/agrum1.png" alt="Agrum AI">
+        </div>
+        <div class="project-content">
+          <h2>Agrum AI : Picture your diet</h2>
+          <p><strong>Mots-clés :</strong> IA, LLM, Python, GCP, CI/CD, API</p>
+          <p>Agrum.ai est une application mobile qui scanne vos plats via IA, décompose les ingrédients et évalue leurs apports nutritionnels, proposant ainsi des menus équilibrés pour favoriser une alimentation saine.</p>
+        </div>
+      </article>
+
+      <article class="project-card" id="cvtodt">
+        <div class="project-image">
+          <img src="media/cvtodt1.png" alt="CVtoDT">
+        </div>
+        <div class="project-content">
+          <h2>CVtoDT : Convertisseur CV en dossier de compétence</h2>
+          <p><strong>Mots-clés :</strong> IA, LLM, Python, AWS App Runner, CI/CD, PDF to DOCX</p>
+          <p>CVtoDT est une application web automatisée pour convertir des fichiers PDF de CV en documents Word professionnels, en enrichissant et réorganisant le contenu via des modèles LLM. Déployée sur AWS avec une pipeline CI/CD.</p>
+        </div>
+      </article>
+  
+      <article class="project-card" id="facerecog">
+        <div class="project-image">
+          <img src="media/facerecog1.png" alt="Face Recognition">
+        </div>
+        <div class="project-content">
+          <h2>Face Recognition using LBPH and SURF</h2>
+          <p><strong>Mots-clés :</strong> IA, Python, OpenCV</p>
+          <p>Système de reconnaissance faciale combinant LBPH et SURF via OpenCV, permettant une détection rapide et robuste des visages en temps réel, même dans des conditions d'éclairage variées.</p>
+        </div>
+      </article>
+
+      <article class="project-card" id="woco">
+        <div class="project-image">
+          <img src="media/woco1.png" alt="WOCO">
+        </div>
+        <div class="project-content">
+          <h2>WOCO : Find the best path on an orientation map</h2>
+          <p><strong>Mots-clés :</strong> IA, Python, NetworkX, Dijkstra, OpenCV</p>
+          <p>WOCO permet, à partir d'une photo d'une carte d'orientation, d'extraire automatiquement les balises et de calculer l'itinéraire optimal en utilisant l'algorithme de Dijkstra.</p>
+        </div>
+      </article>
+
+      <article class="project-card" id="botstar">
+        <div class="project-image">
+          <img src="media/starleague1.png" alt="BOT Star League">
+        </div>
+        <div class="project-content">
+          <h2>BOT Star League</h2>
+          <p><strong>Mots-clés :</strong> Python, Discord API, LLM API, MongoDB</p>
+          <p>Bot Discord permettant la gestion des matchs et tournois Star Wars Legion, incluant le stockage des résultats, la génération de classements, statistiques et analyses avancées pour la communauté.</p>
+        </div>
+      </article>
+
+      <article class="project-card" id="botquizz">
+        <div class="project-image">
+          <img src="media/geobot1.png" alt="BOT Quizz - GEOBOT">
+        </div>
+        <div class="project-content">
+          <h2>BOT Quizz - GEOBOT</h2>
+          <p><strong>Mots-clés :</strong> Python, Discord API, LLM API, MongoDB</p>
+          <p>Bot Discord qui anime des quiz interactifs avec choix de difficulté, questions en temps réel et attribution de points selon rapidité et précision, offrant ainsi une expérience ludique.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer fixe -->
+  <footer class="footer-fixed">
     <p>© 2025 Alexis Soltysiak. Tous droits réservés.</p>
   </footer>
 </body>

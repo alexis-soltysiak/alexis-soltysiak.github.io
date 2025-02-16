@@ -1,103 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>À propos - Alexis Soltysiak</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Styles supplémentaires pour la page À propos */
-    .gallery {
-      display: flex;
-      flex-wrap: nowrap;
-      gap: 1rem;
-      justify-content: center;
-      margin-bottom: 2rem;
-    }
-    .gallery img {
-      height: 200px;
-      width: auto;
-      border: 2px solid #ccc;
-      border-radius: 4px;
-    }
-    .section-heading {
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-    .text-content {
-      max-width: 800px;
-      margin: 0 auto 2rem;
-      text-align: justify;
-    }
-  </style>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>À propos - Soltysiak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="about.html">À propos</a></li>
-            <li><a href="projects.html">Projets</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="about.html"  class="active" >À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="container">
-    <h1 class="section-heading">À propos de moi</h1>
-    <div class="text-content">
-      <p>
-        Je suis un ingénieur passionné par l'intelligence artificielle, la data science et l'ingénierie informatique. En dehors de mon travail, je mène une vie active et créative, dédiée à plusieurs passions qui enrichissent mon quotidien.
-      </p>
-    </div>
+  <!-- Contenu "À propos" -->
+  <main class="about-container">
+    <h1>À propos de moi</h1>
+    <p class="about-intro">
+      L'inforamtique me passione mais en dehors de mon travail, je mène une vie active et créative, dédiée à plusieurs passions qui enrichissent mon quotidien.
+    </p>
 
-    <h2 class="section-heading">Sports</h2>
-    <div class="gallery">
-      <!-- Remplacez les chemins par vos propres images sportives -->
-      <img src="media/sport1.png" alt="Activité sportive 1">
-      <img src="media/sport2.png" alt="Activité sportive 2">
-      <img src="media/sport3.png" alt="Activité sportive 3">
-    </div>
-    <div class="text-content">
-      <p>
-        Le sport occupe une place importante dans ma vie. Que ce soit l'athlétisme, le triathlon ou la course d'orientation, je suis passionné et engagé dans ces activités depuis de nombreuses années, participant à divers événements nationaux et internationaux.
-      </p>
-    </div>
+    <!-- Cartes de passion en disposition horizontale -->
+    <div class="passion-cards">
+      <!-- Carte Sport -->
+      <div class="passion-card">
+        <div class="passion-content">
+          <h2>Sport</h2>
+          <p>
+            Le sport occupe une place importante dans ma vie. Athlétisme, triathlon, course d’orientation : je participe à divers événements nationaux et internationaux.
+          </p>
+        </div>
+        <div class="card-photos">
+          <img src="media/sport1.png" alt="Sport 1">
+          <img src="media/sport2.png" alt="Sport 2">
+          <img src="media/sport3.png" alt="Sport 3">
+        </div>
+      </div>
 
-    <h2 class="section-heading">Dessin</h2>
-    <div class="gallery">
-      <!-- Remplacez les chemins par vos propres images de dessin -->
-      <img src="media/draw1.png" alt="Dessin 1">
-      <img src="media/draw2.png" alt="Dessin 2">
-      <img src="media/draw3.png" alt="Dessin 3">
-    </div>
-    <div class="text-content">
-      <p>
-        Le dessin est pour moi un moyen d'expression et de relaxation. J'aime capturer des idées et des paysages sur papier, développant mes compétences artistiques au fil du temps.
-      </p>
-    </div>
+      <!-- Carte Dessin -->
+      <div class="passion-card">
+        <div class="passion-content">
+          <h2>Dessin</h2>
+          <p>
+            Le dessin est pour moi un moyen d’expression et de relaxation. J’aime capturer des idées et des paysages sur papier, développant mes compétences artistiques.
+          </p>
+        </div>
+        <div class="card-photos">
+          <img src="media/draw1.png" alt="Dessin 1">
+          <img src="media/draw2.png" alt="Dessin 2">
+          <img src="media/draw3.png" alt="Dessin 3">
+        </div>
+      </div>
 
-    <h2 class="section-heading">Piano</h2>
-    <div class="gallery">
-      <!-- Remplacez les chemins par vos propres images de piano -->
-      <img src="media/piano1.png" alt="Piano 1">
+      <!-- Carte Musique -->
+      <div class="passion-card">
+        <div class="passion-content">
+          <h2>Musique</h2>
+          <p>
+            La musique, et en particulier le piano, occupe une place privilégiée dans ma vie. Jouer me permet de me détendre et d’exprimer ma créativité.
+          </p>
+        </div>
+        <div class="card-photos">
+          <img src="media/piano1.png" alt="Musique 1">
+        </div>
+      </div>
+    </div>
+  </main>
 
-    </div>
-    <div class="text-content">
-      <p>
-        La musique est une autre de mes passions, et le piano occupe une place privilégiée dans ma vie. Jouer du piano me permet de me détendre et d'exprimer ma créativité de manière unique.
-      </p>
-    </div>
-  </div>
-  <br>
-  <br>
-  <footer>
+  <!-- Footer fixe -->
+  <footer class="footer-fixed">
     <p>© 2025 Alexis Soltysiak. Tous droits réservés.</p>
   </footer>
 </body>

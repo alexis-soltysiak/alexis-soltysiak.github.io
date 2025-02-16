@@ -1,141 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title data-fr="Accueil - Alexis Soltysiak" data-en="Home - Alexis Soltysiak">Accueil - Alexis Soltysiak</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accueil - Soltysiak</title>
+  <!-- Google Fonts pour une police professionnelle -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <!-- FontAwesome (remplace "YOUR_KIT_CODE" par ton code personnel) -->
+  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- En-tête et navigation -->
+  <!-- Barre de navigation -->
   <header>
-    <nav>
-      <!-- Votre navigation existante -->
-      <ul>
-        <li><a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a></li>
-        <li><a href="about.html" data-fr="À propos" data-en="About">À propos</a></li>
-        <li><a href="projects.html" data-fr="Projets" data-en="Projects">Projets</a></li>
-        <li><a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a></li>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html"  class="active" >Home</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    
-    <div class="language-selector">
-        <select id="languageSelect">
-          <option value="fr">FR</option>
-          
-          <option value="en">ENG</option>
-        </select>
-      </div>
-      
   </header>
-  
-  <div class="container">
-    <section class="intro">
-        <img src="profile.png" alt="Photo de profil d'Alexis Soltysiak">
-        <div class="intro-content">
-          <h1 data-fr="Alexis Soltysiak" data-en="Alexis Soltysiak">Alexis Soltysiak</h1>
-          <p data-fr="Ingénieur compétent, passionné par l'intelligence artificielle, j'excelle dans la résolution de problèmes complexes. J'aime concevoir et déployer des pipelines de données ainsi que réaliser des analyses approfondies pour mener à bien chaque mission avec efficacité et innovation."
-             data-en="Skilled engineer, passionate about artificial intelligence, I excel in solving complex problems. I enjoy designing and deploying data pipelines as well as conducting in-depth analyses to carry out each project with efficiency and innovation.">
-            Ingénieur compétent, 🇫🇷 passionné par l'intelligence artificielle, j'excelle dans la résolution de problèmes complexes. J'aime concevoir et déployer des pipelines de données ainsi que réaliser des analyses approfondies pour mener à bien chaque mission avec efficacité et innovation.
-          </p>
-          <a href="about.html" class="cta-button" 
-             data-fr="En savoir plus sur moi" 
-             data-en="Learn more about me">
-            En savoir plus sur moi
-          </a>
-        </div>
-    </section>
-      
-    <section class="highlights" style="margin-top: 3rem;">
-      <h2 data-fr="Ce que je propose" data-en="What I Offer">Ce que je propose</h2>
-      <ul>
-        <li data-fr="<strong>Analyse de Données :</strong> Exploitation des données pour des insights pertinents et des décisions éclairées."
-            data-en="<strong>Data Analysis:</strong> Leveraging data for insightful and informed decisions.">
-          <strong>Analyse de Données :</strong> Exploitation des données pour des insights pertinents et des décisions éclairées.
-        </li>
-        <li data-fr="<strong>Développement de Bots :</strong> Conception et implémentation de bots intelligents pour automatiser des tâches variées."
-            data-en="<strong>Bot Development:</strong> Designing and implementing intelligent bots to automate various tasks.">
-          <strong>Développement de Bots :</strong> Conception et implémentation de bots intelligents pour automatiser des tâches variées.
-        </li>
-        <li data-fr="<strong>Solutions IA :</strong> Développement de modèles de machine learning et deep learning pour répondre à des besoins spécifiques."
-            data-en="<strong>AI Solutions:</strong> Developing machine learning and deep learning models to meet specific needs.">
-          <strong>Solutions IA :</strong> Développement de modèles de machine learning et deep learning pour répondre à des besoins spécifiques.
-        </li>
-        <li data-fr="<strong>Ingénierie Logicielle :</strong> Création d'applications robustes et évolutives pour différents domaines."
-            data-en="<strong>Software Engineering:</strong> Building robust and scalable applications across domains.">
-          <strong>Ingénierie Logicielle :</strong> Création d'applications robustes et évolutives pour différents domaines.
-        </li>
+
+  <!-- Contenu Principal -->
+  <main class="home-container">
+    <div class="profile-pic-container">
+      <!-- Remplace "images/profile.jpg" par le chemin vers ta photo -->
+      <img src="media/profile.png" alt="Photo de Soltysiak">
+    </div>
+
+    <h1>Alexis Soltysiak</h1>
+    <p class="subtitle">
+      Ingénieur compétent, passionné par l'IA et les données, j'excelle dans la résolution de problèmes complexes.
+      J'aime concevoir et déployer des pipelines de données ainsi que réaliser des analyses approfondies pour mener à bien chaque mission avec efficacité et innovation.
+    </p>
+
+    <div class="cta-buttons">
+      <a href="about.html" class="btn-primary">En savoir plus sur mes projets</a>
+    </div>
+
+    <section class="offer-section">
+      <h2>Ce que je propose</h2>
+      <ul class="offer-list">
+        <li><i class="fas fa-brain"></i> <strong>Solutions IA :</strong> Développement de modèles de machine learning et de deep learning.</li>
+        <li><i class="fas fa-chart-line"></i> <strong>Analyse de Données :</strong> Exploitation statisitque et visuelle des données pour des insights pertinents.</li>
+        <li><i class="fas fa-code"></i> <strong>Pipelines / Cloud :</strong> Création de pipelines robustes et évolutives dans le cloud</li>
+        <li><i class="fas fa-robot"></i> <strong>Développement de Bots :</strong> Conception et implémentation de bots intelligents pour automatiser des tâches.</li>
       </ul>
     </section>
-
-    <section class="call-to-action" style="margin-top: 3rem; text-align: center;">
-      <h2 data-fr="Prêt à collaborer ?" data-en="Ready to Collaborate?">Prêt à collaborer ?</h2>
-      <p data-fr="Contactez-moi pour discuter de vos projets et de comment je peux contribuer à leur réussite."
-         data-en="Contact me to discuss your projects and how I can help make them successful.">
-        Contactez-moi pour discuter de vos projets et de comment je peux contribuer à leur réussite.
-      </p>
-      <a href="contact.html" class="cta-button" 
-         data-fr="Me contacter" 
-         data-en="Contact me">
-        Me contacter
-      </a>
+    <br>  <br>
+    <hr >
+    <section class="collab-section">
+      <h2>Prêt à collaborer ?</h2>
+      <p>Contactez-moi pour discuter de vos projets et de comment je peux contribuer à leur réussite.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn-secondary">Me contacter</a>
+      </div>
     </section>
-  </div>
+  </main>
 
-  <footer>
-    <p data-fr="© 2025 Alexis Soltysiak. Tous droits réservés." 
-       data-en="© 2025 Alexis Soltysiak. All rights reserved.">
-      © 2025 Alexis Soltysiak. Tous droits réservés.
-    </p>
+  <!-- Footer fixe -->
+  <footer class="footer-fixed">
+    <p>© 2025 Alexis Soltysiak. Tous droits réservés.</p>
   </footer>
-
-  <!-- Script pour la traduction -->
-  <script>
-    const languageSelect = document.getElementById('languageSelect');
-
-    function changeLanguage(lang) {
-      // Mettre à jour la langue de l'attribut lang du document
-      document.documentElement.lang = lang;
-
-      // Sélectionner tous les éléments qui possèdent à la fois data-fr et data-en
-      const translatableElements = document.querySelectorAll('[data-fr][data-en]');
-
-      translatableElements.forEach(el => {
-        // S'il y a des balises HTML à l'intérieur des attributs, utiliser innerHTML
-        // Sinon, utiliser textContent pour un texte simple.
-        if(el.hasAttribute('data-fr') && el.hasAttribute('data-en')) {
-          // Vérifier si l'élément contient des balises HTML
-          const frContent = el.getAttribute('data-fr');
-          const enContent = el.getAttribute('data-en');
-
-          // Détecter la présence de balises HTML dans le contenu
-          const containsHTML = /<\/?[a-z][\s\S]*>/i.test(frContent) || /<\/?[a-z][\s\S]*>/i.test(enContent);
-
-          if(containsHTML) {
-            el.innerHTML = lang === 'fr' ? frContent : enContent;
-          } else {
-            el.textContent = lang === 'fr' ? frContent : enContent;
-          }
-        }
-      });
-
-      // Mettre à jour le titre de la page
-      document.title = document.querySelector('title').getAttribute(`data-${lang}`);
-    }
-
-    languageSelect.addEventListener('change', (e) => {
-      const selectedLang = e.target.value;
-      changeLanguage(selectedLang);
-    });
-
-    // Charger la langue par défaut
-    document.addEventListener('DOMContentLoaded', () => {
-      changeLanguage(languageSelect.value);
-    });
-  </script>
 </body>
 </html>

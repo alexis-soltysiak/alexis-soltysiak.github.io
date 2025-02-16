@@ -1,0 +1,381 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corps du document */
+  body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background: #fdfdfd;
+    min-height: 100vh;
+    padding-bottom: 70px; /* Pour le footer fixe */
+  }
+  
+  /* Navigation */
+  .navbar {
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  
+  .nav-brand a {
+    color: #fff;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 3.5rem;
+  }
+  
+  .nav-links a {
+    color: #ccc;
+    font-size: 1.7em;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .nav-links a:hover {
+    color: #fff;
+  }
+
+  .nav-links li a.active {
+    background-color: #ff6f61; /* Couleur de fond pour l'élément actif */
+    color: #fff;               /* Couleur du texte en surbrillance */
+    padding: 0.3rem 0.6rem;     /* Ajoute un peu d'espace autour */
+    border-radius: 4px;        /* Coins arrondis */
+  }
+  
+  /* Footer fixe */
+  .footer-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Page d'accueil */
+  .home-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+  .profile-pic-container {
+    margin: 1rem auto;
+  }
+  
+  .profile-pic-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #000;
+    object-fit: cover;
+  }
+  
+  .home-container h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
+  
+  .subtitle {
+    margin: 1rem 0 2rem;
+    line-height: 1.6;
+  }
+  
+  .cta-buttons {
+    margin: 1.5rem 0;
+  }
+  
+  .btn-primary, .btn-secondary {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  
+  .btn-primary {
+    background: #ff6f61;
+    color: #fff;
+    margin: 0.5rem;
+  }
+  
+  .btn-primary:hover {
+    background: #ff3b2f;
+  }
+  
+  .btn-secondary {
+    background: #4e4376;
+    color: #fff;
+    margin: 0.5rem;
+  }
+  
+  .btn-secondary:hover {
+    background: #342f5c;
+  }
+  
+  /* Section "Ce que je propose" */
+  .offer-section {
+    text-align: left;
+    margin-top: 2rem;
+  }
+  
+  .offer-section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  .offer-list {
+    list-style: none;
+    margin-left: 20px;
+  }
+  
+  .offer-list li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  .offer-list li i {
+    color: #ff6f61;
+  }
+  
+  /* Section "Prêt à collaborer" */
+  .collab-section {
+    margin-top: 2rem;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  /* Page À propos */
+  .about-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .about-container h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+  }
+  
+  .about-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  .passion-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .passion-content {
+    flex: 1;
+    margin-right: 2rem;
+  }
+  
+  @media(min-width: 768px) {
+    .passion-cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .passion-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+  
+  .passion-card h2 {
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+  }
+  
+  .passion-card p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .card-photos {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .card-photos img {
+    max-width: 120px;  /* Augmente cette valeur selon tes préférences */
+    width: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  /* Page Projets */
+  .projects-container {
+    max-width: 60%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .projects-container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+  }
+  
+  .projects-toc {
+    background: #f0f0f0;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+  }
+  
+  .projects-toc h2 {
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+  }
+  
+  .projects-toc ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .projects-toc li {
+    margin: 0.3rem 0;
+  }
+  
+  .projects-toc a {
+    color: #4e4376;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .projects-toc a:hover {
+    text-decoration: underline;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .project-card {
+    display: flex;
+    gap: 1rem;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    align-items: stretch; /* Assure que les colonnes ont la même hauteur */
+  }
+  
+  
+  .project-card .project-image img {
+    width: 300px; /* Hauteur fixe pour toutes les images */
+
+    height: auto;   /* Largeur automatique pour conserver l'aspect ratio */
+    object-fit: contain; /* Pour s'assurer que toute l'image soit visible sans être déformée */
+  }
+  
+  .project-card h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .project-card p {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+  
+  @media(max-width: 768px) {
+    .project-card {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Page Contact */
+  .contact-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .contact-container h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  .contact-info p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    margin-top: 30px;
+  }
+  .contact-info a {
+    color: #2b5876;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .cv-download {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .cv-download h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  .cv-download ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .cv-download li {
+    margin-bottom: 0.5rem;
+  }
+  .cv-download a {
+    color: #4e4376;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 2px solid #4e4376;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+  }
+  .cv-download a:hover {
+    background: #4e4376;
+    color: #fff;
+  }
