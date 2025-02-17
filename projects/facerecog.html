@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Face Recognition - Soltysiak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Fichier de base -->
+  <link rel="stylesheet" href="../style.css">
+  <!-- Fichier spécifique aux pages projets -->
+  <link rel="stylesheet" href="projects.css">
+  <!-- FontAwesome (remplace YOUR_KIT_CODE par ton code personnel) -->
+  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../projects.html"  class="active">Projets</a></li>
+        <li><a href="../about.html">À propos</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="project-detail-container">
+    <h1>Face Recognition using LBPH and SURF</h1>
+    
+    <!-- Mots-clés -->
+    <div class="project-tags">
+      <span class="tag">🧠 IA</span>
+      <span class="tag">🔧 Python</span>
+      <span class="tag">OpenCV</span>
+    </div>
+    
+    <!-- Résumé du projet -->
+    <section class="detail-card project-summary">
+      <h2>Résumé du projet</h2>
+      <p>
+        Le projet consiste en la mise en place d'un système de reconnaissance faciale utilisant OpenCV, combiné aux algorithmes LBPH (Local Binary Patterns Histograms) et SURF (Speeded-Up Robust Features). Ce système vise à identifier et vérifier des visages de manière rapide et efficace, tout en assurant une robustesse face aux variations d'éclairage et d'angles.
+      </p>
+    </section>
+    
+    <!-- Structure de la solution en 3 cards verticales -->
+    <section class="project-structure">
+      <h2>Structure de la solution</h2>
+      <div class="structure-cards">
+        <!-- Card Fonctionnalités principales -->
+        <div class="detail-card structure-card">
+          <div class="structure-content">
+            <h3>Fonctionnalités principales</h3>
+            <ul class="custom-list">
+              <li>Reconnaissance faciale en temps réel : Détection et identification des visages dans des flux vidéo ou des images fixes grâce à l'intégration d'OpenCV.</li>
+              <li>Utilisation combinée de LBPH et SURF : Exploitation des avantages des deux algorithmes pour améliorer la précision et la robustesse de la reconnaissance.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Card Technologies utilisées -->
+        <div class="detail-card structure-card">
+          <div class="structure-content">
+            <h3>Technologies utilisées</h3>
+            <ul class="custom-list">
+              <li>Python - Jupyter Notebook</li>
+              <li>OpenCV : Pour le traitement d’image et la gestion des flux vidéo en temps réel.</li>
+              <li>LBPH : Pour l’analyse et la reconnaissance des caractéristiques faciales basées sur les textures.</li>
+              <li>SURF : Pour l’extraction et la description rapide des points d’intérêt dans les images.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Card Points forts du projet -->
+        <div class="detail-card structure-card">
+          <div class="structure-content">
+            <h3>Points forts du projet</h3>
+            <ul class="custom-list">
+              <li>Précision accrue : L'association de LBPH et SURF permet de compenser les limites de chacun, garantissant une reconnaissance fiable dans des conditions variées.</li>
+              <li>Optimisation en temps réel : L’implémentation avec OpenCV assure une détection rapide et fluide pour des applications nécessitant une forte réactivité.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Liens associés -->
+    <section class="detail-card project-links">
+      <h2>Liens associés</h2>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=PIF-O1gGmVk" target="_blank">Démo en direct</a></li>
+        <!-- Ajoute d'autres liens ou retire si non disponible -->
+      </ul>
+    </section>
+
+    <!-- Galerie (facultatif) -->
+    <!-- 
+    <section class="detail-card project-gallery">
+      <h2>Galerie</h2>
+      <div class="gallery-grid">
+        <img src="../media/facerecog1.png" alt="Face Recog - Image 1">
+        <img src="../media/facerecog2.png" alt="Face Recog - Image 2">
+        <img src="../media/facerecog3.png" alt="Face Recog - Image 3">
+      </div>
+    </section>
+    -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-fixed">
+    <p>© 2025 Alexis Soltysiak. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

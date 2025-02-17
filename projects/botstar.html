@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOT Star League - Soltysiak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Fichier de base -->
+  <link rel="stylesheet" href="../style.css">
+  <!-- Fichier spécifique aux pages projets -->
+  <link rel="stylesheet" href="projects.css">
+  <!-- FontAwesome (remplace YOUR_KIT_CODE par ton code personnel) -->
+  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../projects.html"  class="active" >Projets</a></li>
+        <li><a href="../about.html">À propos</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="project-detail-container">
+    <h1>BOT Star league</h1>
+    
+    <!-- Mots-clés -->
+    <div class="project-tags">
+      <span class="tag">🔧 Python</span>
+      <span class="tag">Discord API</span>
+      <span class="tag">LLM API</span>
+      <span class="tag">MongoDB</span>
+    </div>
+    
+    <!-- Résumé du projet -->
+    <section class="detail-card project-summary">
+      <h2>Résumé du projet</h2>
+      <p>
+        Ce projet consiste à développer un bot Discord, codé en Python, destiné à l'association Star Wars Legion. Le bot a pour mission de gérer les matchs des tournois du jeu de figurines Star Wars Legion en stockant les données dans une base, puis de générer automatiquement des classements, des statistiques et des analyses avancées pour aider la communauté à suivre et à améliorer ses performances.
+      </p>
+    </section>
+    
+    <!-- Structure de la solution en 3 cards verticales -->
+    <section class="project-structure">
+      <h2>Structure de la solution</h2>
+      <div class="structure-cards">
+        <!-- Card Fonctionnalités principales -->
+        <div class="detail-card structure-card">
+          <div class="structure-content">
+            <h3>Fonctionnalités principales</h3>
+            <ul class="custom-list">
+              <li>Enregistrement et gestion des matchs : Stockage automatique des résultats de tournois dans une base de données, avec possibilité de modifications.</li>
+              <li>Génération de classements et de statistiques : Création de classements en temps réel et analyses détaillées des performances.</li>
+              <li>Commandes interactives sur Discord : Interface conviviale permettant aux utilisateurs de consulter les données, lancer des requêtes et obtenir des analyses.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Card Technologies utilisées -->
+        <div class="detail-card structure-card">
+          <div class="structure-content">
+            <h3>Technologies utilisées</h3>
+            <ul class="custom-list">
+              <li>Python : Logique métier du bot.</li>
+              <li>Discord.py : Intégration avec l’API Discord.</li>
+              <li>Base de données (PostgreSQL) : Stockage structuré des résultats de match. Utilisation de SupaBase</li>
+              <li>Bibliothèques d’analyse (Pandas, NumPy) : Traitement et visualisation des statistiques.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Card Points forts du projet -->
+        <div class="detail-card structure-card">
+          <div class="structure-content">
+            <h3>Points forts du projet</h3>
+            <ul class="custom-list">
+              <li>Automatisation et gain de temps : Simplifie la gestion des tournois et l’analyse des performances.</li>
+              <li>Engagement de la communauté : Outil interactif renforçant l’intérêt et la participation des membres.</li>
+              <li>Analyses avancées : Statistiques détaillées permettant d’identifier tendances et points forts/faibles.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Liens associés -->
+    <section class="detail-card project-links">
+      <h2>Liens associés</h2>
+      <ul>
+        <li><a href="https://github.com/alexis-soltysiak/BOT-Star-league" target="_blank">Code Github</a></li>
+      </ul>
+    </section>
+
+    <!-- Galerie (facultatif) -->
+    
+    <section class="detail-card project-gallery">
+      <h2>Galerie</h2>
+      <div class="gallery-grid">
+        <img src="../media/starleague2.png" alt="BOT Star - Image 1">
+        <img src="../media/starleague3.png" alt="BOT Star - Image 2">
+        <img src="../media/starleague4.png" alt="BOT Star - Image 3">
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-fixed">
+    <p>© 2025 Alexis Soltysiak. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

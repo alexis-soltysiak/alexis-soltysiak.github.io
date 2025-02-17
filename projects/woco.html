@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WOCO - Soltysiak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Fichier de base -->
+  <link rel="stylesheet" href="../style.css">
+  <!-- Fichier spécifique aux pages projets -->
+  <link rel="stylesheet" href="projects.css">
+  <!-- FontAwesome (remplace YOUR_KIT_CODE par ton code personnel) -->
+  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../projects.html"  class="active" >Projets</a></li>
+        <li><a href="../about.html">À propos</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="project-detail-container">
+    <h1>WOCO : Find the best path on an orientation map</h1>
+    
+    <!-- Mots-clés -->
+    <div class="project-tags">
+      <span class="tag">🧠 IA</span>
+      <span class="tag">🔧 Python</span>
+      <span class="tag">NetworkX</span>
+      <span class="tag">Dijkstra</span>
+      <span class="tag">OpenCV</span>
+    </div>
+    
+    <!-- Résumé du projet -->
+    <section class="detail-card project-summary">
+      <h2>Résumé du projet</h2>
+      <p>
+        Ce projet permet, à partir d'une photo d'une carte d'orientation, de déterminer automatiquement le chemin le plus rapide pour atteindre chaque balise présente sur le parcours. En analysant l'image avec OpenCV, puis l'extraction avec un RCNN, en modélisant le réseau de balises via NetworkX, et en appliquant l'algorithme de Dijkstra, le système fournit des itinéraires optimisés pour faciliter la navigation sur le terrain.
+      </p>
+    </section>
+    
+    <!-- Structure de la solution en 3 cards verticales -->
+    <section class="project-structure">
+      <h2>Structure de la solution</h2>
+      <div class="structure-cards">
+        <!-- Card Fonctionnalités principales -->
+        <div class="detail-card structure-card">
+          <div class="structure-content">
+            <h3>Fonctionnalités principales</h3>
+            <ul class="custom-list">
+              <li>Analyse d'image et extraction de données : Utilisation d'OpenCV et un RCNN ( Fine tuné sur YOLO ) pour reconnaître et extraire les informations pertinentes (balises, routes, intersections) à partir d'une photo.</li>
+              <li>Calcul d'itinéraire optimal : Modélisation du réseau de balises avec NetworkX et application de l'algorithme de Dijkstra pour déterminer le chemin le plus rapide.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Card Technologies utilisées -->
+        <div class="detail-card structure-card">
+          <div class="structure-content">
+            <h3>Technologies utilisées</h3>
+            <ul class="custom-list">
+              <li>Python : Langage principal pour le développement et l'intégration des différentes composantes.</li>
+              <li>Pytorch : Modèle RCNN finetuné sur YOLO</li>
+              <li>OpenCV : Pour l'analyse de la carte et l'extraction de points clés.</li>
+              <li>NetworkX : Pour la création et la manipulation de graphes.</li>
+              <li>Algorithme de Dijkstra : Méthode de calcul de chemins optimaux.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Card Points forts du projet -->
+        <div class="detail-card structure-card">
+          <div class="structure-content">
+            <h3>Points forts du projet</h3>
+            <ul class="custom-list">
+              <li>Optimisation de la navigation : Fournit des itinéraires précis et rapides, facilitant ainsi l'orientation.</li>
+              <li>Intégration de technologies complémentaires : Allie traitement d'image, modélisation de réseaux et algorithmique de cheminement.</li>
+              <li>Unique : Technologie unique et nouvelle dans le monde de l'orientation</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+    <!-- Galerie (facultatif) -->
+
+    <section class="detail-card project-gallery">
+      <h2>Galerie</h2>
+      <div class="gallery-grid">
+        <img src="../media/woco2.png" alt="WOCO - Image 2">
+        <img src="../media/woco3.png" alt="WOCO - Image 3">
+      </div>
+    </section>
+ 
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-fixed">
+    <p>© 2025 Alexis Soltysiak. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

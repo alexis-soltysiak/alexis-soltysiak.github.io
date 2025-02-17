@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CVtoDT - Soltysiak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Fichier de base -->
+  <link rel="stylesheet" href="../style.css">
+  <!-- Fichier spécifique aux pages projets -->
+  <link rel="stylesheet" href="projects.css">
+  <!-- FontAwesome (remplace YOUR_KIT_CODE par ton code personnel) -->
+  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../projects.html" class="active"  >Projets</a></li>
+        <li><a href="../about.html">À propos</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Contenu du projet CVtoDT -->
+  <main class="project-detail-container">
+    <h1>CVtoDT : Convertisseur CV en dossier de compétence</h1>
+    
+    <!-- Mots-clés -->
+    <div class="project-tags">
+      <span class="tag">🧠 IA</span>
+      <span class="tag">📚 LLM</span>
+      <span class="tag">🔧 Python</span>
+      <span class="tag">☁️ AWS App Runner</span>
+      <span class="tag">🛠️ CI/CD</span>
+      <span class="tag">📜 PDF to DOCX</span>
+    </div>
+    
+    <!-- Résumé du projet -->
+    <section class="detail-card project-summary">
+      <h2>Résumé du projet</h2>
+      <p>
+        CVtoDT est une application qui permet de convertir des CV en dossiers de compétences. Grâce à l'intégration de modèles de Large Language Models (LLM), l'application analyse, réorganise et enrichit le contenu des CV. Le projet est conçu pour être déployé dans un environnement cloud avec une pipeline CI/CD, garantissant des mises à jour fluides et une disponibilité continue.
+      </p>
+    </section>
+    
+    <!-- Structure de la solution avec 3 cards verticales -->
+    <section class="project-structure">
+      <h2>Structure de la solution</h2>
+      <div class="structure-cards">
+        <!-- Card Fonctionnalités principales -->
+        <div class="detail-card structure-card">
+          <div class="structure-content">
+            <h3>Fonctionnalités principales</h3>
+            <ul class="custom-list">
+              <li>Conversion automatisée : Transformez vos CV en dossier de compétence.</li>
+              <li>Enrichissement intelligent : Reformatage et réécriture par une IA.</li>
+              <li>Interface intuitive : Téléchargez, convertissez et récupérez vos fichiers en quelques clics.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Card Technologies utilisées -->
+        <div class="detail-card structure-card">
+          <div class="structure-content">
+            <h3>Technologies utilisées</h3>
+            <ul class="custom-list">
+              <li>Python : Backend FastAPI pour la gestion des requêtes.</li>
+              <li>OpenAI API : Analyse et enrichissement des CV.</li>
+              <li>AWS App Runner : Hébergement de l’application.</li>
+              <li>Docker : Conteneurisation pour une déployabilité rapide.</li>
+              <li>CI/CD avec GitHub Actions : Automatisation des mises à jour.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Card Points forts du projet -->
+        <div class="detail-card structure-card">
+          <div class="structure-content">
+            <h3>Points forts du projet</h3>
+            <ul class="custom-list">
+              <li>Sécurité : Utilisation de tokens Bearer pour protéger les API.</li>
+              <li>Performance : Traitement des fichiers rapide et fiable.</li>
+              <li>Scalabilité : Déployé sur AWS avec prise en charge d'une montée en charge.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Liens associés -->
+    <section class="detail-card project-links">
+      <h2>Liens associés</h2>
+      <ul>
+        <li><a href="#" target="_blank">Code Github [PRIVATE]</a></li>
+        <li><a href="#" target="_blank">Documentation interne [PRIVATE]</a></li>
+        <li><a href="#" target="_blank">Démo en direct [PRIVATE]</a></li>
+      </ul>
+    </section>
+    
+    <!-- Galerie avec 3 images (pas de photo principale) -->
+    <section class="detail-card project-gallery">
+      <h2>Galerie</h2>
+      <div class="gallery-grid">
+        <img src="../media/cvtodt2.png" alt="CVtoDT - Image 2">
+        <img src="../media/cvtodt3.png" alt="CVtoDT - Image 3">
+      </div>
+    </section>
+
+  </main>
+  
+  <!-- Footer fixe -->
+  <footer class="footer-fixed">
+    <p>© 2025 Alexis Soltysiak. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

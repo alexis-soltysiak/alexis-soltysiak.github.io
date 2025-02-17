@@ -285,6 +285,11 @@
     flex-direction: column;
     gap: 2rem;
   }
+
+  .project-link {
+    text-decoration: none; /* Pour enlever le soulignement sur l'ensemble du lien */
+    color: inherit; /* Pour conserver la couleur du texte */
+  }
   
   .project-card {
     display: flex;
@@ -294,6 +299,14 @@
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
     padding: 1rem;
     align-items: stretch; /* Assure que les colonnes ont la même hauteur */
+    transition: background-color 0.3s, transform 0.3s;
+
+  }
+
+  .project-card:hover {
+    background-color: #e9aaaa;
+    transform: translateY(-5px);
+    cursor: pointer;
   }
   
   
