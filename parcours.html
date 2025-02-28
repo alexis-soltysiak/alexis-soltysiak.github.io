@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mon Parcours - Soltysiak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="timeline.css" />
+
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="parcours.html" class="active">Parcours</a></li>
+
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenu Parcours -->
+  <main class="projects-container">
+    <h1>Mon Parcours Professionnel</h1>
+
+
+    <!-- Timeline horizontale -->
+    <section class="timeline-horizontal">
+        <div class="timeline-header">
+        <span>2021</span>
+        <span>2022</span>
+        <span>2023</span>
+        <span>2024</span>
+        <span>2025</span>
+        </div>
+    
+        <div class="timeline-bar">
+        <!-- Expériences (largeur proportionnelle à la durée) -->
+        <div class="timeline-item" style="width: 28%;" title="06/2021 - 09/2022">
+            <span class="company">Gridpocket</span>
+        </div>
+        
+        <div class="timeline-item" style="width: 6%;" title="11/2022 - 01/2023">
+            <span class="company">Go Concept</span>
+        </div>
+    
+        <div class="timeline-item" style="width: 15%;" title="02/2023 - 03/2024">
+            <span class="company">Soitec</span>
+        </div>
+    
+        <div class="timeline-item" style="width: 25%;" title="07/2024 - Maintenant">
+            <span class="company">Decathlon</span>
+        </div>
+        </div>
+    </section>
+    
+
+    
+    
+
+    <!-- Liste détaillée des expériences -->
+    <section class="project-list">
+      
+      <!-- Expérience Decathlon -->
+      <a class="project-link" href="parcours/decathlon.html">
+        <article class="project-card" id="decathlon">
+          <div class="project-image">
+            <!-- Remplace par un logo ou une image liée à Decathlon -->
+            <img src="media/decathlon.jpg" alt="Décathlon">
+          </div>
+          <div class="project-content">
+            <h2>07/2024 – Maintenant : Data Steward et Data Quality Manager (U-need) chez Decathlon</h2>
+            <p>
+              Rôle mixte de Data Steward et Data Quality Manager au sein de Decathlon,
+              création de process et documentation pour la data gouvernance, gestion de la qualité
+              et implémentation de solutions IA (LLM Chatbot).
+            </p>
+          </div>
+        </article>
+      </a>
+
+      <!-- Expérience Soitec -->
+      <a class="project-link" href="parcours/soitec.html">
+        <article class="project-card" id="soitec">
+          <div class="project-image">
+            <img src="media/soitec.jpg" alt="Soitec">
+          </div>
+          <div class="project-content">
+            <h2>02/2023 – 03/2024 : Responsable IT et Data chez Soitec</h2>
+            <p>
+              Gestion complète des aspects IT, Data et Infrastructure : fine tuning IA,
+              reconstruction de la base de données, création d’applications from scratch et
+              optimisation des workflows de production.
+            </p>
+          </div>
+        </article>
+      </a>
+
+      <!-- Expérience Go Concept -->
+      <a class="project-link" href="parcours/goconcept.html">
+        <article class="project-card" id="goconcept">
+          <div class="project-image">
+            <img src="media/goconcept.png" alt="Go Concept">
+          </div>
+          <div class="project-content">
+            <h2>11/2022 – 01/2023 : Data Scientist chez Go Concept</h2>
+            <p>
+              Développement d’un CRM fait-maison (Quest), IA pour la recommandation de consultants,
+              scraping web, dashboards, déploiement sur Azure et création de plusieurs formations data.
+            </p>
+          </div>
+        </article>
+      </a>
+
+      <!-- Expérience Gridpocket -->
+      <a class="project-link" href="parcours/gridpocket.html">
+        <article class="project-card" id="gridpocket">
+          <div class="project-image">
+            <img src="media/gridpocket.jpg" alt="Gridpocket">
+          </div>
+          <div class="project-content">
+            <h2>06/2021 – 09/2022 : Data Scientist / Data Engineer chez Gridpocket</h2>
+            <p>
+              Refonte totale des algorithmes data en Python, mise en place de CI/CD (CircleCI, Airflow),
+              création d’un outil BI pour l’analyse des variables énergétiques et supervision
+              de la qualité des données.
+            </p>
+          </div>
+        </article>
+      </a>
+
+    </section>
+  </main>
+
+  <!-- Footer fixe -->
+  <footer class="footer-fixed">
+    <p>© 2025 Alexis Soltysiak. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

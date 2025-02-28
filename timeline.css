@@ -1,0 +1,66 @@
+/* Timeline horizontale */
+.timeline-horizontal {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  /* Légende des années */
+  .timeline-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  
+  /* Barre principale de la timeline */
+  .timeline-bar {
+    display: flex;
+    background: #ddd;
+    height: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Élément représentant chaque expérience */
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* Couleurs des entreprises */
+  .timeline-item:nth-child(1) { background: #4e89ae; } /* Gridpocket */
+  .timeline-item:nth-child(2) { background: #ed6663; } /* Go Concept */
+  .timeline-item:nth-child(3) { background: #ffa372; } /* Soitec */
+  .timeline-item:nth-child(4) { background: #3b6978; } /* Decathlon */
+  
+  /* Responsive : pour écrans étroits */
+  @media screen and (max-width: 768px) {
+    .timeline-horizontal {
+      max-width: 100%;
+    }
+  
+    .timeline-header {
+      font-size: 12px;
+    }
+  
+    .timeline-bar {
+      height: 30px;
+    }
+  
+    .timeline-item {
+      font-size: 12px;
+    }
+  }
+  

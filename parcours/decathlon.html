@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decathlon - Soltysiak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Fichier de base -->
+  <link rel="stylesheet" href="../style.css">
+  <!-- Fichier spécifique (même que projects.css si tu veux le même style) -->
+  <link rel="stylesheet" href="../projects.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../parcours.html" class="active">Parcours</a></li>
+        <li><a href="../projects.html">Projets</a></li>
+        <li><a href="../about.html">À propos</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="project-detail-container">
+    <div class="header-container">
+        <h1 class="main-title">07/2024 – Maintenant</h1>
+        <h2 class="job-title">Data Steward et Data Quality Manager</h2>
+        <h3 class="company-name">Decathlon</h3>
+    </div>
+    <br>
+
+    <!-- Mots-clés / Compétences techniques -->
+    <div class="project-tags">
+      <span class="tag">🛠️ Jira</span>
+      <span class="tag">📚 Collibra</span>
+      <span class="tag">🐍 Python</span>
+      <span class="tag">⚡ Spark</span>
+      <span class="tag">☁️ Databricks</span>
+      <span class="tag">📊 Tableau</span>
+      <span class="tag">🚀 FastAPI</span>
+      <span class="tag">🔧 Docker</span>
+      <span class="tag">☁️ AWS</span>
+      <span class="tag">🤖 LLM</span>
+      <span class="tag">🔄 Airflow</span>
+    </div>
+
+    <!-- Expérience détaillée -->
+    <section class="detail-card project-summary">
+      <h2>Réalisation</h2>
+      <br>
+      <h3>Data Steward :</h3>
+      <ul class="custom-list">
+        <li>Documentation complète dans le datacatalog Collibra des tables (~160 tables).</li>
+        <li>Mise en place de processus pour l’ajout de table ou de colonne dans le datalake.</li>
+        <li>Gestion des cartes d’ingestion des données quotidien.</li>
+        <li>Création de nombreuses présentations pour la data gouvernance.</li>
+        <li>Création de nombreux cycles de vie des processus de la circularité.</li>
+        <li>Aide dans la création du fichier de documentation automatique en App script.</li>
+        <li>Aide quotidienne pour les data users dans leurs métiers.</li>
+        <li>Création de schémas UML pour les différents domaines de la circularité.</li>
+        <li>Acteur principal pour la mise en place d’un RAG sur un LLM (Chatbot).</li>
+        <li>Accompagnement des Product Managers et des Tech Leads sur tout le process d’ingestion des données.</li>
+        <li>Création entière de la documentation sur Confluence du domaine.</li>
+      </ul>
+
+      <h3>Data Quality Manager :</h3>
+      <ul class="custom-list">
+        <li>Création du document **Qualidoc** permettant de faciliter l’ajout des champs techniques et fonctionnels des règles de qualité.</li>
+        <li>Création de nombreuses règles de qualité avec les Product Managers.</li>
+        <li>Création de tours de contrôle sur Databricks avec Spark puis Airflow pour le backend.</li>
+        <li>Création de tours de contrôle sur Tableau pour le frontend.</li>
+        <li>Résolution quotidienne de problèmes de qualité avec des tickets sur Jira (RUN).</li>
+      </ul>
+
+      <h3>Chez U-need en parallèle :</h3>
+      <ul class="custom-list">
+        <li>Création de **CVtoDT** : Application permettant de convertir un CV en dossier de compétences.</li>
+
+        <li>Création d’une intégration continue avec GitHub Actions.</li>
+        <li>Déployé entièrement sur AWS et Dockerisé.</li>
+        <li>Utilisation de l’IA générative ainsi que d’une API FastAPI.</li>
+        <li>Protection via tokens d’accès et images sécurisées.</li>
+
+      </ul>
+    </section>
+
+    <!-- Méthodologie & Environnement technique -->
+    <section class="detail-card structure-card">
+      <div class="structure-content">
+        <h2>Méthodologie & Environnement</h2>
+        <p>
+          <strong>Méthodologie :</strong> Meetings toutes les semaines avec l’équipe gouvernance, meetings avec les Product Managers, roadmap et tickets sur Jira.
+        </p>
+      </div>
+    </section>
+    
+    <!-- Galerie -->
+    <section class="detail-card project-gallery">
+      <h2>Galerie</h2>
+      <div class="gallery-grid">
+        <img src="../media/decathlon_1.png" alt="Decathlon - Data Steward">
+        <img src="../media/decathlon_2.png" alt="Decathlon - Data Quality Manager">
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer-fixed">
+    <p>© 2025 Soltysiak. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
